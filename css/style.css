@@ -1,0 +1,246 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Colors */
+
+:root {
+    --primary-color: #F2F2F2;
+    --secondary-color: #3E4759;
+    --tertiary-color: #C8CACF;
+    --quaternary-color: #151821;
+    --quinary-color: #BFA58E;
+}
+
+/* Header */ 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    height: 88px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    z-index: 1;
+}
+
+.axium {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.axium {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1.2rem;
+}
+
+/* Menu or Sidenav */
+    
+.topnav {
+    display: none 
+}
+
+.span {
+    position: absolute;
+    right: 0;
+    padding: 1.6rem;
+    font-size: 24px;
+    color: var(--primary-grey);
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:left;
+    background-color: white;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--primary-grey);
+    display: block;
+    transition: 0.3s;
+  
+  }
+
+  .sidenav .menu {
+    padding-top: 88px;
+  }
+
+  .sidenav .menu .item {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+      border-top: 2px solid var(--primary-grey);
+  }
+
+  .sidenav .menu .item img {
+      height: 16px;
+      width: 16px;
+      padding: 8px 32px 8px 8px;
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    padding: 1.6rem;
+    color: var(--primary-grey);
+  }
+
+/* Footer Area */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    border-top: 2px solid var(--primary-grey);
+    
+}
+
+.socials {
+    height: 35px;
+}
+
+.socials a{
+    height: 35px;
+    width: 35px;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 0.4rem;
+    font-size: 12px;
+}
+
+
+/* Body */
+
+.programming {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background-image: url(/pictures/programming4.jpeg);
+    background-repeat: repeat;
+    background-position: center;
+    display: table;
+    filter: grayscale(100%);
+    margin-top: 10rem;
+}
+
+.programming-text {
+    color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.programming-text h1 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+
+@media (min-width: 1080px) {
+
+    /* Header Scaled */
+    
+    header {
+        display: inline-flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        height: 88px;
+        width: 100%;
+        background-color: var(--tertiary-color);
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    header a {
+        text-decoration: none;
+        color: var(--quaternary-color);
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    .logo {
+        margin: 0;
+        height: 90px;
+        width: 100px;
+    }
+    
+    .febi {
+        margin: 0;
+        height: 90px;
+        width: 100px;
+    }
+
+    /* Navigation */
+
+    .span {
+        display: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .topnav {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    nav {
+        margin-right: 1.4rem;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-top: 1.6rem;
+        margin-right: 1.4rem;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin-left: 2rem;
+    }
+
+    /* Footer Scaled */
+
+    .copyright {
+        margin-left: 0;
+    }
+    
+
+}
+
