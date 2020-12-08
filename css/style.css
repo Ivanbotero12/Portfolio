@@ -108,36 +108,8 @@ header {
     color: var(--primary-grey);
   }
 
-/* Footer Area */
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--white);
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
-    border-top: 2px solid var(--primary-grey);
-    
-}
-
-.socials {
-    height: 35px;
-}
-
-.socials a{
-    height: 35px;
-    width: 35px;
-    text-decoration: none;
-}
-
-.copyright {
-    margin-top: 0.4rem;
-    font-size: 12px;
-}
-
-
-/* Body */
+  
+/* Body Homepage */
 
 .programming {
     width: 100vw;
@@ -166,7 +138,221 @@ footer {
     margin-right: 2rem;
 }
 
+/* links til andre sider - Homepage */
 
+/*
+.box1 {
+    display: inline-block;
+    position: relative;
+    cursor: auto;
+    margin: 4px;
+    width: 150px;
+    height: 200px;
+}
+
+.portfolio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: bottom center;
+    background-size: cover;
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+}
+*/
+
+
+/* Portofolio */
+
+
+.box1 {
+    background-image: url(/pictures/port1.jpeg);
+    width:200px;
+    height:200px;
+    background-size:cover;
+    display:inline-block;
+    margin:4px;
+    border-radius:16px;
+    box-shadow:0 0 16px rgba(0,0,0,0.5);
+    position:relative;
+}
+
+
+.box1 div {
+    z-index:1;
+    color:#fff;
+    text-align:center;
+    padding-top:40%;
+    padding-bottom: 46%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:16px;
+    opacity:0;
+    transition:.3s;
+}
+
+.box1 div a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;    
+}
+
+  .box1 div:hover {
+    opacity:1;  
+    z-index:3;
+}
+
+
+/* Blog */
+
+
+.box2 {
+    background-image: url(/pictures/blog1.jpeg);
+    width:200px;
+    height:200px;
+    background-size:cover;
+    display:inline-block;
+    margin:4px;
+    border-radius:16px;
+    box-shadow:0 0 16px rgba(0,0,0,0.5);
+    position:relative;
+}
+
+.box2 div {
+    z-index:1;
+    color:#fff;
+    text-align:center;
+    padding-top:40%;
+    padding-bottom: 46%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:16px;
+    opacity:0;
+    transition:.3s;
+}
+
+.box2 div a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;    
+}
+
+.box2 div:hover {
+    opacity:1;  
+    z-index:3;
+}
+
+
+/* About me */
+
+
+.box3 {
+    background-image: url(/pictures/port2.jpeg);
+    width:200px;
+    height:200px;
+    background-size:cover;
+    display:inline-block;
+    margin:4px;
+    border-radius:16px;
+    box-shadow:0 0 16px rgba(0,0,0,0.5);
+    position:relative;
+}
+
+.box3 div {
+    z-index:1;
+    color:#fff;
+    text-align:center;
+    padding-top:40%;
+    padding-bottom: 46%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:16px;
+    opacity:0;
+    transition:.3s;
+}
+
+.box3 div a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px; 
+}
+
+.box3 div:hover {
+    opacity:1;  
+    z-index:3;
+}
+
+
+/* contact */
+
+
+.box4 {
+    background-image: url(/pictures/contact1.jpeg);
+    width:200px;
+    height:200px;
+    background-size:cover;
+    display:inline-block;
+    margin:4px;
+    border-radius:16px;
+    box-shadow:0 0 16px rgba(0,0,0,0.5);
+    position:relative;
+}
+
+.box4 div {
+    z-index:1;
+    color:#fff;
+    text-align:center;
+    padding-top:40%;
+    padding-bottom: 46%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:16px;
+    opacity:0;
+    transition:.3s;
+}
+
+.box4 div a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;    
+}
+
+.box4 div:hover {
+    opacity:1;  
+    z-index:3;
+}
+
+
+/* Footer Area */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    border-top: 2px solid var(--primary-grey);
+    
+}
+
+.socials {
+    height: 35px;
+}
+
+.socials a{
+    height: 35px;
+    width: 35px;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 0.4rem;
+    font-size: 12px;
+}
 
 
 @media (min-width: 1080px) {
@@ -238,10 +424,10 @@ footer {
     /* Body */
 
     .programming {
+        background-image: url(/pictures/programming1.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 400px;
-    }
+        }
 
     .grid {
         display: grid;

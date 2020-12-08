@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
+     <!--Header-->
+
+     <header>
+        <a class="axium" href="home.html">
+            Axium
+        </a> 
+            
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/pictures/menu.png" alt="menu"></a>
+            <div class="menu">
+                <a class="item" href="portfolio.html">
+                    Portfolio
+                </a>
+                <a class="item" href="blog.html">
+                    Blog
+                </a>
+                <a class="item" href="about.html">
+                    About Me
+                </a>
+                <a class="item" href="contact.html">
+                    Contact
+                </a>
+        </div>
+            
+        </div>
+          
+        <span class="span" style="cursor:pointer" onclick="openNav()"><img src="/pictures/menu.png" alt="menu"></span>
+          
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+        <div class="topnav">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="item" href="portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="about.html">
+                            About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     
 </body>
 </html>
