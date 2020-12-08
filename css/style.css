@@ -235,6 +235,20 @@ footer {
         margin-left: 2rem;
     }
 
+    /* Body */
+
+    .programming {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 400px);
+    }
+
     /* Footer Scaled */
 
     .copyright {
