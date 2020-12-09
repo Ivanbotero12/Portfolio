@@ -163,179 +163,123 @@ header {
 }
 */
 
-.page-links {
+.mobile-links, .desktop-links {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+.mobile-links a, .desktop-links a {
+    text-decoration: none;
+    justify-self: center;
+}
+
 .box1, .box2, .box3, .box4 {
-    margin-left: 1rem;
+    display: none;
 }
 
 .box3, .box4 {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 
-/* Homepage - Portofolio */
+/* Homepage - Portofolio - mobile*/
 
+.mobile-1, .mobile-2 .mobile-3 .mobile-4 {
+    margin: 16px 16px 0px;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
 
-.box1 {
-    background-image: url(/pictures/port2.jpeg);
+.mobile-1 {
+    background-image: url(/pictures/port1.jpeg);
+    background-size: cover;
+    background-position: center;
     width:175px;
     height:175px;
-    background-size:cover;
-    display:inline-block;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
     position:relative;
 }
 
-
-.box1 div {
-    z-index:1;
-    color:#fff;
-    text-align:center;
-    padding-top:40%;
-    padding-bottom: 46%;
-    background-color:rgba(0,0,0,0.5);
-    border-radius:16px;
-    opacity:0;
-    transition:.3s;
-}
-
-.box1 div a {
-    text-decoration: none;
-    color: white;
+.mobile-1 h3 {
+    font-size: 28px;
+    line-height: 11rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 25px;    
+    
 }
 
-.box1 div:hover {
-    opacity:1;  
-    z-index:3;
-}
-
-
-/* Homepage - Blog */
-
-
-.box2 {
+.mobile-2 {
     background-image: url(/pictures/blog2.jpeg);
+    background-size: cover;
+    background-position: center;
     width:175px;
     height:175px;
-    background-size:cover;
-    background-position: center;
-    display:inline-block;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
     position:relative;
 }
 
-.box2 div {
-    z-index:1;
-    color:#fff;
-    text-align:center;
-    padding-top:40%;
-    padding-bottom: 46%;
-    background-color:rgba(0,0,0,0.5);
-    border-radius:16px;
-    opacity:0;
-    transition:.3s;
-}
-
-.box2 div a {
-    text-decoration: none;
-    color: white;
+.mobile-2 h3 {
+    font-size: 28px;
+    line-height: 11rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 25px;    
+    
 }
 
-.box2 div:hover {
-    opacity:1;  
-    z-index:3;
-}
-
-
-/* Homepage - About me */
-
-
-.box3 {
+.mobile-3 {
     background-image: url(/pictures/about3.jpg);
+    background-size: cover;
+    background-position: center;
     width:175px;
     height:175px;
-    background-size:cover;
-    background-position: center;
-    display:inline-block;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
     position:relative;
 }
 
-.box3 div {
-    z-index:1;
-    color:#fff;
-    text-align:center;
-    padding-top:40%;
-    padding-bottom: 46%;
-    background-color:rgba(0,0,0,0.5);
-    border-radius:16px;
-    opacity:0;
-    transition:.3s;
-}
-
-.box3 div a {
-    text-decoration: none;
-    color: white;
+.mobile-3 h3 {
+    font-size: 28px;
+    line-height: 11rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 25px; 
+    
 }
 
-.box3 div:hover {
-    opacity:1;  
-    z-index:3;
-}
-
-
-/* Homepage - Contact */
-
-
-.box4 {
+.mobile-4 {
     background-image: url(/pictures/contact1.jpeg);
+    background-size: cover;
+    background-position: center;
     width:175px;
     height:175px;
-    background-size:cover;
-    background-position: center;
-    display:inline-block;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
     position:relative;
 }
 
-.box4 div {
-    z-index:1;
-    color:#fff;
-    text-align:center;
-    padding-top:40%;
-    padding-bottom: 46%;
-    background-color:rgba(0,0,0,0.5);
-    border-radius:16px;
-    opacity:0;
-    transition:.3s;
-}
-
-.box4 div a {
-    text-decoration: none;
-    color: white;
+.mobile-4 h3 {
+    font-size: 28px;
+    line-height: 11rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 25px;    
+    
 }
 
-.box4 div:hover {
-    opacity:1;  
-    z-index:3;
-}
 
 
 /* Body - Portofolio */
@@ -496,6 +440,10 @@ footer {
 
     /* links til andre sider - Homepage */
 
+    .mobile-links {
+        display: none;
+    }
+
     .box1, .box2, .box3, .box4 {
         width: 400px;
         height: 400px;
@@ -505,6 +453,164 @@ footer {
     .box1 div a, .box2 div a, .box3 div a, .box4 div a {
         font-size: 3rem;
     }
+
+    
+    .box1 {
+        background-image: url(/pictures/port2.jpeg);
+
+
+        background-size:cover;
+        display:inline-block;
+        border-radius:16px;
+        box-shadow:0 0 16px rgba(0,0,0,0.5);
+        position:relative;
+    }
+
+
+    .box1 div {
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        padding-top:40%;
+        padding-bottom: 46%;
+        background-color:rgba(0,0,0,0.5);
+        border-radius:16px;
+        opacity:0;
+        transition:.3s;
+    }
+
+    .box1 div a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+            
+    }
+
+    .box1 div:hover {
+        opacity:1;  
+        z-index:3;
+    }
+
+
+    /* Homepage - Blog */
+
+
+    .box2 {
+        background-image: url(/pictures/blog2.jpeg);
+
+
+        background-size:cover;
+        background-position: center;
+        display:inline-block;
+        border-radius:16px;
+        box-shadow:0 0 16px rgba(0,0,0,0.5);
+        position:relative;
+    }
+
+    .box2 div {
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        padding-top:40%;
+        padding-bottom: 46%;
+        background-color:rgba(0,0,0,0.5);
+        border-radius:16px;
+        opacity:0;
+        transition:.3s;
+    }
+
+    .box2 div a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+            
+    }
+
+    .box2 div:hover {
+        opacity:1;  
+        z-index:3;
+    }
+
+
+    /* Homepage - About me */
+
+
+    .box3 {
+        background-image: url(/pictures/about3.jpg);
+
+
+        background-size:cover;
+        background-position: center;
+        display:inline-block;
+        border-radius:16px;
+        box-shadow:0 0 16px rgba(0,0,0,0.5);
+        position:relative;
+    }
+
+    .box3 div {
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        padding-top:40%;
+        padding-bottom: 46%;
+        background-color:rgba(0,0,0,0.5);
+        border-radius:16px;
+        opacity:0;
+        transition:.3s;
+    }
+
+    .box3 div a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+         
+    }
+
+    .box3 div:hover {
+        opacity:1;  
+        z-index:3;
+    }
+
+
+    /* Homepage - Contact */
+
+
+    .box4 {
+        background-image: url(/pictures/contact1.jpeg);
+
+
+        background-size:cover;
+        background-position: center;
+        display:inline-block;
+        border-radius:16px;
+        box-shadow:0 0 16px rgba(0,0,0,0.5);
+        position:relative;
+    }
+
+    .box4 div {
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        padding-top:40%;
+        padding-bottom: 46%;
+        background-color:rgba(0,0,0,0.5);
+        border-radius:16px;
+        opacity:0;
+        transition:.3s;
+    }
+
+    .box4 div a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+            
+    }
+
+    .box4 div:hover {
+        opacity:1;  
+        z-index:3;
+    }
+
 
     /* Footer Scaled */
 
