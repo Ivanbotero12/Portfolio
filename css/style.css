@@ -125,6 +125,7 @@ header {
 
 .programming-text {
     color: white;
+    text-shadow: 0 0 20px black;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -138,6 +139,13 @@ header {
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+.programming-text h2 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 
 /* links til andre sider - Homepage */
 
@@ -163,6 +171,10 @@ header {
 }
 */
 
+
+/* Links til andre sider */
+
+
 .mobile-links, .desktop-links {
     margin-top: 2rem;
     display: grid;
@@ -182,15 +194,16 @@ header {
     margin-top: 2rem;
 }
 
-
-/* Homepage - Portofolio - mobile*/
-
 .mobile-1, .mobile-2 .mobile-3 .mobile-4 {
     margin: 16px 16px 0px;
     width: calc(100% - 32px);
     height: 100px;
     background-color: #f2f2f2;
 }
+
+
+/* Homepage - Portofolio - mobile*/
+
 
 .mobile-1 {
     background-image: url(/pictures/port1.jpeg);
@@ -214,6 +227,10 @@ header {
     
 }
 
+
+/* Homepage - Portofolio - mobile*/
+
+
 .mobile-2 {
     background-image: url(/pictures/blog2.jpeg);
     background-size: cover;
@@ -236,6 +253,10 @@ header {
     
 }
 
+
+/* Homepage - Portofolio - mobile*/
+
+
 .mobile-3 {
     background-image: url(/pictures/about3.jpg);
     background-size: cover;
@@ -257,6 +278,10 @@ header {
     text-transform: uppercase;
     
 }
+
+
+/* Homepage - Portofolio - mobile*/
+
 
 .mobile-4 {
     background-image: url(/pictures/contact1.jpeg);
@@ -381,18 +406,6 @@ footer {
         font-weight: 500;
         font-size: 20px;
     }
-    
-    .logo {
-        margin: 0;
-        height: 90px;
-        width: 100px;
-    }
-    
-    .febi {
-        margin: 0;
-        height: 90px;
-        width: 100px;
-    }
 
     /* Navigation */
 
@@ -426,17 +439,27 @@ footer {
         margin-left: 2rem;
     }
 
-    /* Body */
+
+    /* Body - Homepage */
+
+    .programming-text h1 {
+        margin-top: -10rem;
+        font-size: 4rem;
+    } 
+
+    
+    .programming-text h2 {
+        margin-top: 15rem;
+    }
+
 
     .programming {
         background-image: url(/pictures/programming1.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
+        border: solid;
+        border-color: gray;
         }
-
-    .page {
-        grid-template-rows: repeat(2, 400px);
-    }
 
     /* links til andre sider - Homepage */
 
@@ -457,8 +480,6 @@ footer {
     
     .box1 {
         background-image: url(/pictures/port2.jpeg);
-
-
         background-size:cover;
         display:inline-block;
         border-radius:16px;
