@@ -120,6 +120,7 @@ header {
     display: table;
     filter: grayscale(100%);
     margin-top: 10rem;
+    box-shadow:0 0 16px rgba(0,0,0,0.5);
 }
 
 .programming-text {
@@ -162,17 +163,30 @@ header {
 }
 */
 
+.page-links {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-/* Portofolio */
+.box1, .box2, .box3, .box4 {
+    margin-left: 1rem;
+}
+
+.box3, .box4 {
+    margin-top: 1.5rem;
+}
+
+
+/* Homepage - Portofolio */
 
 
 .box1 {
-    background-image: url(/pictures/port1.jpeg);
-    width:200px;
-    height:200px;
+    background-image: url(/pictures/port2.jpeg);
+    width:175px;
+    height:175px;
     background-size:cover;
     display:inline-block;
-    margin:4px;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
     position:relative;
@@ -198,22 +212,22 @@ header {
     font-size: 25px;    
 }
 
-  .box1 div:hover {
+.box1 div:hover {
     opacity:1;  
     z-index:3;
 }
 
 
-/* Blog */
+/* Homepage - Blog */
 
 
 .box2 {
-    background-image: url(/pictures/blog1.jpeg);
-    width:200px;
-    height:200px;
+    background-image: url(/pictures/blog2.jpeg);
+    width:175px;
+    height:175px;
     background-size:cover;
+    background-position: center;
     display:inline-block;
-    margin:4px;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
     position:relative;
@@ -244,16 +258,16 @@ header {
 }
 
 
-/* About me */
+/* Homepage - About me */
 
 
 .box3 {
-    background-image: url(/pictures/port2.jpeg);
-    width:200px;
-    height:200px;
+    background-image: url(/pictures/about3.jpg);
+    width:175px;
+    height:175px;
     background-size:cover;
+    background-position: center;
     display:inline-block;
-    margin:4px;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
     position:relative;
@@ -284,16 +298,16 @@ header {
 }
 
 
-/* contact */
+/* Homepage - Contact */
 
 
 .box4 {
     background-image: url(/pictures/contact1.jpeg);
-    width:200px;
-    height:200px;
+    width:175px;
+    height:175px;
     background-size:cover;
+    background-position: center;
     display:inline-block;
-    margin:4px;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
     position:relative;
@@ -322,6 +336,53 @@ header {
     opacity:1;  
     z-index:3;
 }
+
+
+/* Body - Portofolio */
+
+
+
+
+
+/* Body - Blog */
+
+
+
+
+
+/* Body - About Me */
+
+
+/* Body - info about me*/
+
+
+.info {
+    margin-top: 10rem;
+    display: block;
+}
+
+.me {
+    background-image: url(/pictures/me1.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* about me - media querry
+
+.info {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+*/
+
+
+/* Body - Contact */
+
+
+
 
 
 /* Footer Area */
@@ -429,10 +490,20 @@ footer {
         background-size: cover;
         }
 
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .page {
         grid-template-rows: repeat(2, 400px);
+    }
+
+    /* links til andre sider - Homepage */
+
+    .box1, .box2, .box3, .box4 {
+        width: 400px;
+        height: 400px;
+        justify-self: center;
+    }
+
+    .box1 div a, .box2 div a, .box3 div a, .box4 div a {
+        font-size: 3rem;
     }
 
     /* Footer Scaled */
