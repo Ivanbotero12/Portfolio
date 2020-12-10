@@ -9,9 +9,9 @@
 </head>
 <body>
     
-     <!--Header-->
+    <!--Header-->
 
-     <header>
+    <header>
         <a class="axium" href="home.html">
             Axium
         </a> 
@@ -28,11 +28,12 @@
                 <a class="item" href="about.html">
                     About Me
                 </a>
-                <a class="item" href="contact.html">
+                <a class="item" href="contact.html" style="
+                border-bottom: 2px solid var(--secondary-color);
+                "> 
                     Contact
                 </a>
-        </div>
-            
+            </div>            
         </div>
           
         <span class="span" style="cursor:pointer" onclick="openNav()"><img src="/pictures/menu.png" alt="menu"></span>
@@ -52,28 +53,62 @@
                 <ul>
                     <li>
                         <a class="item" href="portfolio.html">
-                            Portfolio
+                            <button class="btn btn1">
+                                <h1>Portfolio</h1>
+                            </button>
                         </a>
                     </li>
                     <li>
                         <a class="item" href="blog.html">
-                            Blog
+                            <button class="btn btn2">
+                                <h1>Blog</h1>
+                            </button>
                         </a>
                     </li>
                     <li>
                         <a class="item" href="about.html">
-                            About Me
+                            <button class="btn btn3">
+                                <h1>About Me</h1>
+                            </button>
                         </a>
-                    </li>
+                    </li> 
                     <li>
                         <a class="item" href="contact.html">
-                            Contact
+                            <button class="btn btn4">
+                                <h1>Contact</h1>
+                            </button>
                         </a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <div class="blog">
+        <p class="wheelchair">&#x267F; coming soon &#x267F;</p>
+    </div>
+
+    <footer>
+        <div class="socials">
+            <a class="scl" href="https://www.facebook.com/ivan.botero.16/">
+                <img src="./pictures/facebook.png" alt="Facebook"> 
+            </a>
+            <a class="scl" href="#">
+                <img src="./pictures/discord.png" alt="Discord"> 
+            </a>
+            <a class="scl" href="https://www.instagram.com/ivan.tiago/">
+                <img src="./pictures/instagram.png" alt="Instagram"> 
+            </a>
+            <a class="scl" href="#">
+                <img src="./pictures/linkedin.png" alt="LinkedIN"> 
+            </a> 
+        </div>
+    
+        <p class="copyright">
+            © Ivan Santiago Botero Loaiza - 2020
+        </p>
+    </footer>
+
 
 
 </body>

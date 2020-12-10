@@ -32,16 +32,20 @@ header {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.axium {
     font-weight: bold;
     font-size: 2rem;
     padding: 1.2rem;
+    letter-spacing: 8px;
+    -webkit-text-stroke-width: thin;
+}
+
+.axium:hover {
+    color: white;
 }
 
 /* Menu or Sidenav */
     
+
 .topnav {
     display: none 
 }
@@ -66,9 +70,9 @@ header {
     transition: 0.5s;
     text-align:left;
     background-color: white;
-  }
+}
   
-  .sidenav a {
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -76,40 +80,80 @@ header {
     display: block;
     transition: 0.3s;
   
-  }
+}
 
-  .sidenav .menu {
+.sidenav .menu {
     padding-top: 88px;
-  }
+}
 
-  .sidenav .menu .item {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 1.6rem;
-      padding-bottom: 1.6rem;
-      border-top: 2px solid var(--primary-grey);
-  }
+.sidenav .menu .item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    border-top: 2px solid var(--secondary-color);
+}
 
-  .sidenav .menu .item img {
-      height: 16px;
-      width: 16px;
-      padding: 8px 32px 8px 8px;
-  }
+.contact {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.item
+
+.sidenav .menu .item img {
+    height: 16px;
+    width: 16px;
+    padding: 8px 32px 8px 8px;
+}
   
-  .sidenav a:hover{
+.sidenav a:hover{
     color: #f1f1f1;
-  }
+}
   
-  .sidenav .closebtn {
+.sidenav .closebtn {
     position: absolute;
     right: 0;
     font-size: 24px;
     padding: 1.6rem;
     color: var(--primary-grey);
-  }
+}
 
   
+button {
+    border-style: solid;
+    border-color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 8px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+    }
+
+button h1 {
+    font-size: 20px;
+    display: contents;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+    background-color: gray;
+    color: white;
+}
+
+.btn1:active, .btn2:active, .btn3:active, .btn4:active {
+    background-color: black;
+}
+  
 /* Body Homepage */
+
+.homepage {
+    background-image: url(/pictures/bground.jpg);
+    background-size: cover;
+}
 
 .programming {
     width: 100vw;
@@ -147,38 +191,12 @@ header {
 }
 
 
-/* links til andre sider - Homepage */
-
-/*
-.box1 {
-    display: inline-block;
-    position: relative;
-    cursor: auto;
-    margin: 4px;
-    width: 150px;
-    height: 200px;
-}
-
-.portfolio {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-position: bottom center;
-    background-size: cover;
-    box-shadow: 0 8px 16px rgba(0,0,0,.1);
-}
-*/
-
-
 /* Links til andre sider */
 
 
 .mobile-links, .desktop-links {
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin-left: 6vw;
 }
 
 .mobile-links a, .desktop-links a {
@@ -194,7 +212,7 @@ header {
     margin-top: 2rem;
 }
 
-.mobile-1, .mobile-2 .mobile-3 .mobile-4 {
+.mobile-1, .mobile-2, .mobile-3, .mobile-4 {
     margin: 16px 16px 0px;
     width: calc(100% - 32px);
     height: 100px;
@@ -209,7 +227,7 @@ header {
     background-image: url(/pictures/port1.jpeg);
     background-size: cover;
     background-position: center;
-    width:175px;
+    width: 80vw;
     height:175px;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
@@ -235,7 +253,7 @@ header {
     background-image: url(/pictures/blog2.jpeg);
     background-size: cover;
     background-position: center;
-    width:175px;
+    width: 80vw;
     height:175px;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
@@ -261,7 +279,7 @@ header {
     background-image: url(/pictures/about3.jpg);
     background-size: cover;
     background-position: center;
-    width:175px;
+    width: 80vw;
     height:175px;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
@@ -287,7 +305,7 @@ header {
     background-image: url(/pictures/contact1.jpeg);
     background-size: cover;
     background-position: center;
-    width:175px;
+    width: 80vw;
     height:175px;
     border-radius:16px;
     box-shadow:0 0 16px rgba(0,0,0,0.5);
@@ -306,16 +324,30 @@ header {
 }
 
 
-
 /* Body - Portofolio */
 
 
+.description-port {
+    display: block;
+    margin-top: 10rem;
+}
 
+.description-port h1 {
+    text-align: center;
+}
 
 
 /* Body - Blog */
 
 
+.blog {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.wheelchair {
+    font-size: 10rem;
+}
 
 
 
@@ -331,9 +363,10 @@ header {
 }
 
 .me {
-    background-image: url(/pictures/me1.jpg);
-    background-size: cover;
-    height: 100vh;
+    background-image: url(/pictures/9.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
     width: 100vw;
 }
 
@@ -351,7 +384,66 @@ header {
 /* Body - Contact */
 
 
+* {
+    box-sizing: border-box;
+  }
+  
+.contactbox {
+    margin-top: 10rem;
+}
 
+
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
 
 
 /* Footer Area */
@@ -386,9 +478,11 @@ footer {
 
 
 @media (min-width: 1080px) {
+    
 
     /* Header Scaled */
     
+
     header {
         display: inline-flex;
         justify-content: space-between;
@@ -407,7 +501,9 @@ footer {
         font-size: 20px;
     }
 
+
     /* Navigation */
+
 
     .span {
         display: none;
@@ -422,36 +518,37 @@ footer {
         justify-content: center;
     }
 
-    nav {
-        margin-right: 1.4rem;
-    }
-
     nav ul {
         list-style: none;
         display: flex;
-        margin-top: 1.6rem;
-        margin-right: 1.4rem;
+        margin-top: 1.8rem;
         margin-bottom: 0;
         padding: 0;
     }
 
     nav li {
-        margin-left: 2rem;
+        margin: 2rem;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
 
     /* Body - Homepage */
 
+
     .programming-text h1 {
-        margin-top: -10rem;
+        margin-top: -15rem;
         font-size: 4rem;
+        
     } 
 
     
     .programming-text h2 {
-        margin-top: 15rem;
+        margin-top: 4rem;
+        margin-left: 40rem;
+        float: right;
+        text-align: start;
     }
-
 
     .programming {
         background-image: url(/pictures/programming1.jpeg);
@@ -465,6 +562,13 @@ footer {
 
     .mobile-links {
         display: none;
+    }
+
+    .desktop-links {
+        margin-bottom: 2rem;
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .box1, .box2, .box3, .box4 {
@@ -518,8 +622,6 @@ footer {
 
     .box2 {
         background-image: url(/pictures/blog2.jpeg);
-
-
         background-size:cover;
         background-position: center;
         display:inline-block;
@@ -544,7 +646,6 @@ footer {
         text-decoration: none;
         color: white;
         text-transform: uppercase;
-            
     }
 
     .box2 div:hover {
@@ -558,8 +659,6 @@ footer {
 
     .box3 {
         background-image: url(/pictures/about3.jpg);
-
-
         background-size:cover;
         background-position: center;
         display:inline-block;
@@ -598,8 +697,6 @@ footer {
 
     .box4 {
         background-image: url(/pictures/contact1.jpeg);
-
-
         background-size:cover;
         background-position: center;
         display:inline-block;
@@ -614,6 +711,258 @@ footer {
         text-align:center;
         padding-top:40%;
         padding-bottom: 46%;
+        background-color:rgba(0,0,0,0.5);
+        border-radius:16px;
+        opacity:0;
+        transition:.3s;
+    }
+
+    .box4 div a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+            
+    }
+
+    .box4 div:hover {
+        opacity:1;  
+        z-index:3;
+    }
+
+
+    /* Footer Scaled */
+
+    .copyright {
+        margin-left: 0;
+    }
+    
+
+}
+
+
+@media (min-width: 1081px) {
+
+    /* Header Scaled */
+    
+    header {
+        display: inline-flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        height: 88px;
+        width: 100%;
+        background-color: var(--tertiary-color);
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    header a {
+        text-decoration: none;
+        color: var(--quaternary-color);
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    /* Navigation */
+
+    .span {
+        display: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .topnav {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-top: 1.8rem;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 2rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+
+
+    /* Body - Homepage */
+
+    .programming-text h1 {
+        margin-top: -20rem;
+        font-size: 4rem;
+    } 
+
+    
+    .programming-text h2 {
+        margin-top: 10rem;
+        margin-right: 15rem;
+        float: right;
+        text-align: start;
+    }
+
+    .programming {
+        background-image: url(/pictures/programming1.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: solid;
+        border-color: gray;
+        }
+
+    /* links til andre sider - Homepage */
+
+    .mobile-links {
+        display: none;
+    }
+
+    .desktop-links {
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 700px;
+        height: 400px;
+        justify-self: center;
+    }
+
+    .box1 div, .box2 div, .box3 div, .box4 div {
+        padding-top: 25%;
+        padding-bottom: 24.5%;
+    }
+
+    .box1 div a, .box2 div a, .box3 div a, .box4 div a {
+        font-size: 3rem;
+    }
+
+    .box1 {
+        background-image: url(/pictures/port2.jpeg);
+        background-size:cover;
+        display:inline-block;
+        border-radius:16px;
+        box-shadow:0 0 16px rgba(0,0,0,0.5);
+        position:relative;
+    }
+
+    .box1 div {
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        background-color:rgba(0,0,0,0.5);
+        border-radius:16px;
+        opacity:0;
+        transition:.3s;
+    }
+
+    .box1 div a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+            
+    }
+
+    .box1 div:hover {
+        opacity:1;  
+        z-index:3;
+    }
+
+
+    /* Homepage - Blog */
+
+
+    .box2 {
+        background-image: url(/pictures/blog2.jpeg);
+        background-size:cover;
+        background-position: center;
+        display:inline-block;
+        border-radius:16px;
+        box-shadow:0 0 16px rgba(0,0,0,0.5);
+        position:relative;
+    }
+
+    .box2 div {
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        background-color:rgba(0,0,0,0.5);
+        border-radius:16px;
+        opacity:0;
+        transition:.3s;
+    }
+
+    .box2 div a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .box2 div:hover {
+        opacity:1;  
+        z-index:3;
+    }
+
+
+    /* Homepage - About me */
+
+
+    .box3 {
+        background-image: url(/pictures/about3.jpg);
+        background-size:cover;
+        background-position: center;
+        display:inline-block;
+        border-radius:16px;
+        box-shadow:0 0 16px rgba(0,0,0,0.5);
+        position:relative;
+    }
+
+    .box3 div {
+        z-index:1;
+        color:#fff;
+        text-align:center;
+        background-color:rgba(0,0,0,0.5);
+        border-radius:16px;
+        opacity:0;
+        transition:.3s;
+    }
+
+    .box3 div a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+         
+    }
+
+    .box3 div:hover {
+        opacity:1;  
+        z-index:3;
+    }
+
+
+    /* Homepage - Contact */
+
+
+    .box4 {
+        background-image: url(/pictures/contact1.jpeg);
+        background-size:cover;
+        background-position: center;
+        display:inline-block;
+        border-radius:16px;
+        box-shadow:0 0 16px rgba(0,0,0,0.5);
+        position:relative;
+    }
+
+    .box4 div {
+        z-index:1;
+        color:#fff;
+        text-align:center;
         background-color:rgba(0,0,0,0.5);
         border-radius:16px;
         opacity:0;
