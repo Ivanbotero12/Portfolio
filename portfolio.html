@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-185246499-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-185246499-1');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="decription" content="My Portfolio">
@@ -8,8 +20,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+
+<body class="sky">
 
     <!--Header-->
 
@@ -96,7 +110,87 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga repudiandae est vitae error, veniam quod, aperiam possimus ipsa explicabo voluptas mollitia magnam molestias ipsam, esse aspernatur neque sit nostrum eveniet?
         </p>
     </section>
+
+<!-- Mobile links -->
+
+    <section class="mobile-port">
+
+        <div class="center">
+            <h1>1.1 Rumrejsen</h1>
+            <hr>
+        </div>
+        
+        <section class="center">
+            <div class="kobenhavn">
+                <a href="#" id="rum" class="kob"><button class="bport">Click to view more about this project</button></a>
+                    <hr>
+            </div>
+
+<!--pop-up københavn-->
+
+    <div class="project">
+        <div class="project-content">
+            <div class="close">
+                +
+            </div>
+            <h2>Rumrejsen</h2>
+            <a href="http://axium.dk/dnr/v%C3%A6relser.html" target="_blank">
+                <h3 class="mobrh3">Click here to open the project in a new tab!</h3>
+            </a>
+            <h3 class="deskrh3">Click the image to open the project in a new tab!</h3>
+            <a href="http://axium.dk/dnr/v%C3%A6relser.html" target="_blank">
+                <img src="/pictures/dnr2.PNG" alt="">
+            </a>            
+            <p>In our first school project we were asked to make a case for a Danish company preparing for the launch of their space shuttle.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('rum').addEventListener('click',
+        
+        function(){
+            document.querySelector('.project').style.display = 'flex';
+        });
+
+        document.querySelector('.close').addEventListener('click',
+        function(){
+            document.querySelector('.project').style.display = 'none';
+
+        });
+    </script>
+
+
+<!-- Desktop links
     
+    <section class="desktop-links portfolio">
+
+        <div class="box1 boxp1">
+            <div>
+                <a href="portfolio.html">Rumrejsen</a>
+            </div>
+        </div>
+        
+        <div class="box2 boxp2">
+            <div>
+                <a href="blog.html">Dans, dans, dans</a>
+            </div>
+        </div>
+
+        <div class="box3 boxp3">
+            <div>
+                <a href="about.html">Bag Rattet del 1 og 2</a>
+            </div>
+        </div>
+    
+        <div class="box4 boxp4">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3LgS0rc_ieQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </section>
+ -->
+
 <!-- Footer -->
 
     <footer>

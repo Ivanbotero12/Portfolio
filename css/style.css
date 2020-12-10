@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 /* Colors */
@@ -10,6 +13,7 @@
     --tertiary-color: #C8CACF;
     --quaternary-color: #151821;
     --quinary-color: #BFA58E;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Header */ 
@@ -37,6 +41,7 @@ header {
     padding: 1.2rem;
     letter-spacing: 8px;
     -webkit-text-stroke-width: thin;
+    font-family: var(--font-family);
 }
 
 .axium:hover {
@@ -149,7 +154,7 @@ button h1 {
   
 /* Body Homepage */
 
-.homepage {
+.sky {
     background-image: url(/pictures/bground.jpg);
     background-size: cover;
 }
@@ -179,11 +184,13 @@ button h1 {
 }
 
 .programming-text h1 {
+    font-family: var(--font-family);
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
 .programming-text h2 {
+    font-family: var(--font-family);
     font-size: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -219,7 +226,7 @@ button h1 {
 }
 
 
-/* Homepage - Portofolio - mobile*/
+/* Homepage - Portfolio - mobile*/
 
 
 .mobile-1 {
@@ -245,7 +252,7 @@ button h1 {
 }
 
 
-/* Homepage - Portofolio - mobile*/
+/* Homepage - Portfolio - mobile*/
 
 
 .mobile-2 {
@@ -271,7 +278,7 @@ button h1 {
 }
 
 
-/* Homepage - Portofolio - mobile*/
+/* Homepage - Portfolio - mobile*/
 
 
 .mobile-3 {
@@ -297,7 +304,7 @@ button h1 {
 }
 
 
-/* Homepage - Portofolio - mobile*/
+/* Homepage - Portfolio - mobile*/
 
 
 .mobile-4 {
@@ -323,8 +330,9 @@ button h1 {
 }
 
 
-/* Body - Portofolio */
+/* Body - Portfolio */
 
+/*  Portfolio - Description */
 
 .description-port {
     display: block;
@@ -332,9 +340,113 @@ button h1 {
 }
 
 .description-port h1 {
+    font-family: var(--font-family);
     text-align: center;
 }
 
+/*  Portfolio - Projects */
+
+.deskrh3 {
+    display: none;
+}
+
+.mobile-port {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-port a{
+    font-size: 30px;
+    text-decoration: none;
+  
+}
+
+.center h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+}
+
+.kobenhavn{
+    text-align: center;
+}
+
+
+.project {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.project img {
+    display: none;
+}
+
+.project-content{
+    width: 50vw;
+    height: 550px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+.project-content img {
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.project h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.project h3{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    text-decoration: underline;
+}
+
+.project h4{
+    margin-top: 0;
+    margin-left: 1.5rem;
+}
+
+.project p{
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+}
+
+.close{
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 39px;
+    transform: rotate(45deg);
+}
+
+.bport {
+    border-style: ridge;
+    border-radius: 0;
+}
+
+.bport:hover {
+    background-color: gray;
+    color: white;
+}
 
 /* Body - Blog */
 
@@ -356,7 +468,7 @@ button h1 {
     margin-top: 12rem;
     margin-left: 0.5rem;
     padding: 2rem;
-    -webkit-transform: rotate(347deg);
+    transform: rotate(347deg);
 }
 
 
@@ -487,7 +599,7 @@ footer {
 
 .copyright {
     margin-top: 0.4rem;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 
@@ -547,7 +659,7 @@ footer {
     }
 
 
-    /* Body - Homepage */
+    /* Body - Homepage - Desktop */
 
 
     .programming-text h1 {
@@ -631,7 +743,7 @@ footer {
     }
 
 
-    /* Homepage - Blog */
+    /* Homepage - Blog - Desktop */
 
 
     .box2 {
@@ -668,7 +780,7 @@ footer {
     }
 
 
-    /* Homepage - About me */
+    /* Homepage - About me - Desktop */
 
 
     .box3 {
@@ -706,7 +818,7 @@ footer {
     }
 
 
-    /* Homepage - Contact */
+    /* Homepage - Contact - Desktop */
 
 
     .box4 {
@@ -743,31 +855,65 @@ footer {
         z-index:3;
     }
 
-    /* Body - Portofolio */
+    /* Body - Portfolio - Desktop */
+
+
+    
+    .mobrh3 {
+        display: none;
+    }   
+
+    .deskrh3 {
+        display: block;        
+    }
+    
+    .project h3 {
+        text-decoration: none;
+    }
+       
+    .project img {
+        display: flex;
+        width: 300px;
+        height: 200px;
+    }
+
+
+    .project-content{
+        width: 50vw;
+        height: 550px;
+        background-color: white;
+        border-radius: 4px;
+        position: relative;
+        margin-top: 10rem;
+    }
     
     
-    /* Body - Blog */
+    
+    /* Body - Blog - Desktop */
 
     .blogpic img {
         height: auto;
     }
 
     .wheelchair {
-        font-size: 2rem;
-        margin-top: 47rem;
-        margin-left: 10rem;
-        -webkit-transform: rotate(350deg);
+        font-size: 1.3rem;
+        margin-top: 26rem;
+        margin-left: 4.5rem;
+        transform: rotate(350deg);
     }
 
 
-    /* Body - About Me */
+    /* Body - About Me - Desktop */
     
     
-    /* Body - Contact */
+    /* Body - Contact - Desktop */
 
 
 
-    /* Footer Scaled */
+
+
+
+    /* Footer Scaled - Desktop */
 
     .copyright {
         margin-left: 0;
@@ -776,10 +922,12 @@ footer {
 
 }
 
+/*  1920 media querry */
 
 @media (min-width: 1081px) {
 
-    /* Header Scaled */
+
+    /* Header Scaled - Desktop */
     
     header {
         display: inline-flex;
@@ -799,7 +947,7 @@ footer {
         font-size: 20px;
     }
 
-    /* Navigation */
+    /* Navigation - Desktop */
 
     .span {
         display: none;
@@ -830,7 +978,7 @@ footer {
 
 
 
-    /* Body - Homepage */
+    /* Body - Homepage - Desktop */
 
     .programming-text h1 {
         margin-top: -20rem;
@@ -853,7 +1001,7 @@ footer {
         border-color: gray;
         }
 
-    /* links til andre sider - Homepage */
+    /* links til andre sider - Homepage - Desktop */
 
     .mobile-links {
         display: none;
@@ -912,7 +1060,7 @@ footer {
     }
 
 
-    /* Homepage - Blog */
+    /* Homepage - Blog - Desktop */
 
 
     .box2 {
@@ -947,7 +1095,7 @@ footer {
     }
 
 
-    /* Homepage - About me */
+    /* Homepage - About me - Desktop */
 
 
     .box3 {
@@ -983,7 +1131,7 @@ footer {
     }
 
 
-    /* Homepage - Contact */
+    /* Homepage - Contact - Desktop */
 
 
     .box4 {
@@ -1019,7 +1167,46 @@ footer {
     }
 
 
-    /* Footer Scaled */
+    /* Body - Portfolio - Desktop */
+    
+
+    .project-content{
+        width: 50vw;
+        height: 50vh;
+        background-color: white;
+        border-radius: 4px;
+        position: relative;
+        margin-top: 0;
+    }
+    
+    .project-content img {
+        left: 35%;
+    }
+    
+
+    /* Body - Blog - Desktop */
+
+
+    .blogpic img {
+        height: auto;
+    }
+
+    .wheelchair {
+        font-size: 2rem;
+        margin-top: 47rem;
+        margin-left: 10rem;
+        transform: rotate(350deg);
+    }
+
+
+    /* Body - About Me - Desktop */
+    
+    
+    /* Body - Contact - Desktop */
+
+
+
+    /* Footer Scaled - Desktop */
 
     .copyright {
         margin-left: 0;
