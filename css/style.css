@@ -40,7 +40,7 @@ header {
 }
 
 .axium:hover {
-    color: white;
+    color: var(--primary-color);
 }
 
 /* Menu or Sidenav */
@@ -117,7 +117,6 @@ header {
     padding: 1.6rem;
     color: var(--primary-grey);
 }
-
   
 button {
     border-style: solid;
@@ -339,14 +338,25 @@ button h1 {
 
 /* Body - Blog */
 
+.binfo {
+    display: flex;
+}
 
-.blog {
-    margin-top: 10rem;
-    text-align: center;
+.blogpic img {
+    width: 100vw;
+    height: 50vh;
+
 }
 
 .wheelchair {
-    font-size: 10rem;
+    font-size: 8px;
+    float: left;
+    display: inline-flex;
+    position: absolute;
+    margin-top: 12rem;
+    margin-left: 0.5rem;
+    padding: 2rem;
+    -webkit-transform: rotate(347deg);
 }
 
 
@@ -366,10 +376,14 @@ button h1 {
     background-image: url(/pictures/9.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     height: 50vh;
     width: 100vw;
 }
 
+.metext h1 {
+    text-align: center;
+}
 /* about me - media querry
 
 .info {
@@ -728,6 +742,29 @@ footer {
         opacity:1;  
         z-index:3;
     }
+
+    /* Body - Portofolio */
+    
+    
+    /* Body - Blog */
+
+    .blogpic img {
+        height: auto;
+    }
+
+    .wheelchair {
+        font-size: 2rem;
+        margin-top: 47rem;
+        margin-left: 10rem;
+        -webkit-transform: rotate(350deg);
+    }
+
+
+    /* Body - About Me */
+    
+    
+    /* Body - Contact */
+
 
 
     /* Footer Scaled */
