@@ -41,7 +41,6 @@ header {
     padding: 1.2rem;
     letter-spacing: 8px;
     -webkit-text-stroke-width: thin;
-    font-family: var(--font-family);
 }
 
 .axium:hover {
@@ -336,7 +335,10 @@ button h1 {
 
 .description-port {
     display: block;
-    margin-top: 10rem;
+    margin-top: 12rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
 }
 
 .description-port h1 {
@@ -346,34 +348,41 @@ button h1 {
 
 /*  Portfolio - Projects */
 
-.deskrh3 {
+.deskrh3, .deskvh3 {
     display: none;
+}
+
+iframe {
+    visibility: hidden;
+    height: 0;
 }
 
 .mobile-port {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-.mobile-port a{
+.mobile-port a {
     font-size: 30px;
     text-decoration: none;
   
 }
 
-.center h1 {
+.rum h1, .dans h1, .rat h1, .video h1 {
     text-align: center;
     text-transform: uppercase;
     font-family: var(--font-family);
 }
 
-.kobenhavn{
+.dnr, .standans, .febi, .intkat {
     text-align: center;
 }
 
 
-.project {
+.project1, .project2, .project3, .project4 {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
@@ -383,21 +392,44 @@ button h1 {
     justify-content: center;
     align-items: center;
     display: none;
+    margin-left: -1rem;
 }
 
-.project img {
+.project1 img, .project2 img, .project3 img, .project4 img {
     display: none;
 }
 
-.project-content{
+.project-content1, .project-content2, .project-content3, .project-content4 {
     width: 50vw;
-    height: 550px;
+    height: 60vh;
     background-color: white;
     border-radius: 4px;
     position: relative;
+    background-size: cover;
 }
 
-.project-content img {
+.project-content1 {
+    background-image: url(/pictures/rum.jpeg);
+}
+
+.project-content2 {
+    background-image: url(/pictures/dansbground.jpeg);
+    height: 70vh;
+}
+
+.project-content3 {
+    background-image: url(/pictures/bagrbg.png);
+    background-position-x: -8rem;
+    height: 70vh;
+    width: 60vw;
+}
+
+.project-content4 {
+    background-image: url(/pictures/videobg.jpg);
+    background-position: center;
+}
+
+.project-content1 img, .project-content2 img, .project-content3 img, .project-content4 img {
     width: 50%;
     height: 50%;
     left: 25%;
@@ -405,13 +437,40 @@ button h1 {
     border-radius: 15px;
 }
 
-.project h2{
+.project1 h2, .project2 h2, .project3 h2, .project4 h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
 }
 
-.project h3{
+.project1 h2 {
+    color: var(--primary-color);
+}
+
+.project2 h2 {
+    margin-right: 1rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 15px black;
+}
+
+.project3 h2 {
+    margin-right: 1rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 15px black;
+    filter: drop-shadow(2px 4px 6px black);
+    display: inline-flex;
+    margin-left: 25%;
+}
+
+.project4 h2 {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px black;
+    filter: drop-shadow(2px 4px 6px black);
+    display: inline-flex;
+    margin-left: 34%;
+}
+
+.project1 h3, .project2 h3, .project3 h3, .project4 h3 {
     margin-top: 2rem;
     text-align: center;
     font-size: 15px;
@@ -419,24 +478,79 @@ button h1 {
     text-decoration: underline;
 }
 
-.project h4{
-    margin-top: 0;
-    margin-left: 1.5rem;
+.project1 h3 {
+    color: var(--primary-color);
 }
 
-.project p{
+.project2 h3 {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px black;
+    margin-top: 1.5rem;
+}
+
+.project3 h3 {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 15px black;
+    margin-top: 1.5rem;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.project4 h3 {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px black;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.project1 p, .project2 p, .project3 p, .project4 p {
     font-size: 12px;
     margin-bottom: 0;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
 }
 
-.close{
+.project1 p{
+    color: var(--primary-color);
+}
+
+.project2 p {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px black;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;    
+}
+
+.project3 p {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px black;
+    font-weight: bolder;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem; 
+    filter: drop-shadow(2px 4px 6px black); 
+}
+
+.project4 p {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px black;
+    filter: drop-shadow(2px 4px 6px black);
+    margin-top: 1rem;
+}
+
+.close, .close2, .close3, .close4 {
     position: absolute;
     top:0;
     right: 14px;
     font-size: 39px;
     transform: rotate(45deg);
+    cursor: pointer;
+    color: var(--primary-color);
 }
+
 
 .bport {
     border-style: ridge;
@@ -858,36 +972,81 @@ footer {
     /* Body - Portfolio - Desktop */
 
 
-    
-    .mobrh3 {
-        display: none;
-    }   
+    .description-port {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-    .deskrh3 {
+    .mobile-port {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+
+    .mobrh3, .mobvh3 {
+        display: none;
+    }
+
+    .deskrh3, .deskvh3 {
         display: block;        
     }
+
+    .project2 h2, .project3 h2 {
+        margin-right: 0;
+
+    }
     
-    .project h3 {
+    .project1 h3, .project2 h3, .project3 h3, .project4 h3 {
         text-decoration: none;
     }
-       
-    .project img {
+
+    
+    .project3 h3 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .project1 img, .project2 img, .project3 img, .project4 img {
         display: flex;
         width: 300px;
         height: 200px;
     }
 
+    .project2 img {
+        display: none;
+    }
 
-    .project-content{
+    .project-content1, .project-content2, .project-content3, .project-content4 {
         width: 50vw;
-        height: 550px;
+        height: 70vh;
         background-color: white;
         border-radius: 4px;
         position: relative;
         margin-top: 10rem;
     }
+
+    .project-content2 {
+        margin-top: 10rem;
+        line-height: 1.5;
+    }
+
+    .project1 p, .project2 p, .project3 p, .project4 p {
+        text-align: left;
+        margin-top: 2rem;
+    }
     
-    
+    .project p {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    iframe {
+        visibility: visible;
+        height: 200px;
+        width: 300px;
+        margin-left: 22%;
+    }
     
     /* Body - Blog - Desktop */
 
@@ -977,8 +1136,8 @@ footer {
     }
 
 
-
     /* Body - Homepage - Desktop */
+
 
     .programming-text h1 {
         margin-top: -20rem;
@@ -1168,9 +1327,30 @@ footer {
 
 
     /* Body - Portfolio - Desktop */
-    
 
-    .project-content{
+
+    .project2 img {
+        display: flex;    
+    }
+
+    .project2 h2, .project3 h2 {
+        font-size: 35px;
+    }
+
+    .project4 h2 {
+        margin-left: 45.5%;
+    }
+    
+    .project2 h3, .project3 h3 {
+        margin-top: 10rem;
+        font-size: 25px;
+    }
+
+    .project2 p, .project3 p {
+        font-size: 15px;
+    }
+
+    .project-content1, .project-content2, .project-content3, .project-content4 {
         width: 50vw;
         height: 50vh;
         background-color: white;
@@ -1178,11 +1358,27 @@ footer {
         position: relative;
         margin-top: 0;
     }
+
+    .project-content2, .project-content3 {
+        height: 80vh;
+        margin-top: 8rem;
+    }
+
+    .project-content4 {
+        height: 60vh;
+    }
     
-    .project-content img {
+    .project-content1 img, .project-content2 img, .project-content3 img, .project-content4 img  {
         left: 35%;
     }
     
+
+    iframe {
+        height: 300px;
+        width: 500px;
+        margin-left: 25%;
+    }
+
 
     /* Body - Blog - Desktop */
 
