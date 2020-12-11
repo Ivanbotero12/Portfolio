@@ -595,21 +595,78 @@ iframe {
 
 .info {
     margin-top: 10rem;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
 }
 
 .me {
-    background-image: url(/pictures/9.jpg);
-    background-size: contain;
+    background-image: url(/pictures/aboutme.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 50vh;
-    width: 100vw;
+    border-radius: 15px;
+    box-shadow:0 0 16px rgba(0,0,0,0.5);
+}
+
+.metext {
+    text-align: center;
 }
 
 .metext h1 {
-    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: thin;
 }
+
+.metext h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    border-style: solid;
+    border-color: var(--tertiary-color);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); 
+}
+
+.metext a, .exp a {
+    color: black;
+    font-family: var(--font-family);
+}
+
+.metext a:hover, .exp a:hover {
+    color: white;
+}
+
+.exp {
+    border-style: solid;
+    border-color: var(--tertiary-color);
+    font-weight: 500;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.exp h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+.exp div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.gefion img {
+    margin-top: 1rem;
+}
+
+
 /* about me - media querry
 
 .info {
@@ -1064,6 +1121,33 @@ footer {
 
     /* Body - About Me - Desktop */
     
+    .info {
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
+
+    .me {
+        margin-top: 2rem;
+        width: 50%;
+        height: 70vh;
+    }
+
+    .metext {
+        width: 50%;
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .metext h1 {
+        margin-top: 10rem;
+    }
+    
+    .metext h2 {
+        border-style: none;
+        border-radius: none;
+        box-shadow: none;
+}
+    }
     
     /* Body - Contact - Desktop */
 
