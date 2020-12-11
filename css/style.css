@@ -342,7 +342,7 @@ button h1 {
     text-align: center;
 }
 
-.description-port h1 {
+.description-port h1, .description-port h2 {
     font-family: var(--font-family);
     text-align: center;
 }
